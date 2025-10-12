@@ -1,5 +1,5 @@
 # <p align="center">📘 Domain‑Oriented Design (DOD) in Laravel</p>
-
+**<p align="center">[Digging Deeper into Security](Docs/Security.md) | [Development Path](Docs/README.md)</p>**
 ---
 
 ## 🤔 What is DOD ?
