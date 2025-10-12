@@ -118,7 +118,7 @@ php artisan make:domain Blog
 ```
 ایجاد: `app/Domain/Blog/{Models,Actions,Http,Providers,Policies,Routes}`
 
-**<p align="center">[👨‍🏫 Full documentation](docs/DOMAIN.md)</p>**
+**<p align="center">[👨‍🏫 Full documentation](Docs/DOMAIN.md)</p>**
 
 ---
 ### 2️⃣ `make:d-provider`
@@ -130,7 +130,7 @@ Create a Domain ServiceProvider.
 php artisan make:d-provider Blog 
 ```
 
-**<p align="center">[👨‍🏫 Full documentation](docs/D-PROVIDER.md)</p>**
+**<p align="center">[👨‍🏫 Full documentation](Docs/D-PROVIDER.md)</p>**
 **<p align="center">[🤓 More about providers in laravel](https://laravel.com/docs/12.x/providers)</p>**
 
 ---
@@ -142,7 +142,7 @@ Create a domain model and optionally migration/factory/seeder.
 ```bash
 php artisan make:d-model Post --domain=Blog -m -f -s
 ```
-**<p align="center">[👨‍🏫 Full documentation](docs/D-MODEL.md)</p>**
+**<p align="center">[👨‍🏫 Full documentation](Docs/D-MODEL.md)</p>**
 **<p align="center">[🤓 More about eloquent models in laravel](https://laravel.com/docs/12.x/eloquent)</p>**
 
 
@@ -157,8 +157,8 @@ Scaffold an Action class (invokable or custom method) with optional model/reques
 php artisan make:d-action CreatePost --domain=Blog --invokable --model=Post 
 ```
 
-**<p align="center">[👨‍🏫 Full documentation](docs/D-ACTION.md)</p>**
-**<p align="center">[🤓 More about actions in DOD](docs/MoreAboutActions.md)</p>**
+**<p align="center">[👨‍🏫 Full documentation](Docs/D-ACTION.md)</p>**
+**<p align="center">[🤓 More about actions in DOD](Docs/MoreAboutActions.md)</p>**
 
 ---
 
@@ -171,7 +171,7 @@ Generate FormRequest classes placed inside the domain (not global `app/Http/Requ
 php artisan make:d-request StorePost --domain=Blog
 ```
 
-**<p align="center">[👨‍🏫 Full documentation](docs/D-REQUEST.md)</p>**
+**<p align="center">[👨‍🏫 Full documentation](Docs/D-REQUEST.md)</p>**
 **<p align="center">[🤓 More about form request validation in laravel](https://laravel.com/docs/12.x/validation#form-request-validation)</p>**
 
 
@@ -186,7 +186,7 @@ Create controllers inside the domain. Supports resource controllers and rewrites
 php artisan make:d-controller PostController --domain=Blog --model=Post --resource --requests
 ```
 
-**<p align="center">[👨‍🏫 Full documentation](docs/D-CONTROLLER.md)</p>**
+**<p align="center">[👨‍🏫 Full documentation](Docs/D-CONTROLLER.md)</p>**
 **<p align="center">[🤓 More about controllers in laravel](https://laravel.com/docs/12.x/controllers)</p>**
 
 
@@ -202,7 +202,7 @@ php artisan make:d-resource PostResource --domain=Blog --model=Post
 php artisan make:d-resource PostCollection --domain=Blog --collection --model=Post
 ```
 
-**<p align="center">[👨‍🏫 Full documentation](docs/D-RESOURCE.md)</p>**
+**<p align="center">[👨‍🏫 Full documentation](Docs/D-RESOURCE.md)</p>**
 **<p align="center">[🤓 More about resources in laravel(in eloquent)](https://laravel.com/docs/12.x/eloquent-resources)</p>**
 
 ---
@@ -216,7 +216,7 @@ Create a domain policy; optionally scaffold methods with model type hints and sh
 php artisan make:d-policy Post --domain=Blog --model=Post
 ```
 
-**<p align="center">[👨‍🏫 Full documentation](docs/D-POLICY.md)</p>**
+**<p align="center">[👨‍🏫 Full documentation](Docs/D-POLICY.md)</p>**
 **<p align="center">[🤓 More about policies in laravel(in authorization)](https://laravel.com/docs/12.x/authorization#creating-policies)</p>**
 
 
@@ -448,4 +448,4 @@ Route::prefix('api/blog')->middleware('api')->group(function () {
 
 ---
 
-**<p align="center">[Digging Deeper into Security](docs/Security.md) | [Development Path](docs/README.md)</p>**
+**<p align="center">[Digging Deeper into Security](Docs/Security.md) | [Development Path](Docs/README.md)</p>**
