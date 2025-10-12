@@ -354,7 +354,7 @@ use App\Domain\Blog\Http\Resources\PostResource;
 
 class PostController extends Controller
 {
-    public function store(StorePostRequest \$request, CreatePost \$action)
+    public function store(StorePostRequest $request, CreatePost $action)
     {
         // $request is validated automatically
         $data = $request->validated();
@@ -418,7 +418,7 @@ public function boot()
 
 **usage in controller:**
 ```php
-public function update(StorePostRequest \$request, Post \$post)
+public function update(StorePostRequest $request, Post $post)
 {
     $this->authorize('update', $post); // uses PostPolicy::update
     // ...

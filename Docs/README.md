@@ -66,9 +66,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 ### گام 2 — تعریف وابستگی‌ها و روابط (Relationships)
 - در مدل `Post` روابط را تعریف کنید:
 ```php
-public function author() { return \$this->belongsTo(User::class, 'user_id'); }
-public function comments() { return \$this->hasMany(Comment::class); }
-public function tags() { return \$this->belongsToMany(Tag::class); }
+public function author() { return $this->belongsTo(User::class, 'user_id'); }
+public function comments() { return $this->hasMany(Comment::class); }
+public function tags() { return $this->belongsToMany(Tag::class); }
 ```
 - **نکته:** اگر مدل دیگر در همان domain است از FQCN `App\Domain\Blog\Models\User::class` استفاده کنید؛ اگر مدل در `App\Models` است از آن‌جا استفاده کنید.
 
@@ -78,7 +78,7 @@ public function tags() { return \$this->belongsToMany(Tag::class); }
 - تصمیم‌گیری بین `$fillable` و `$guarded` 
 - پیشنهاد: از `$fillable` صریح استفاده کنید.
 ```php
-protected \$fillable = ['title', 'body', 'user_id', 'published_at'];
+protected $fillable = ['title', 'body', 'user_id', 'published_at'];
 ```
 - این از حملات mass-assignment جلوگیری می‌کند.
 
@@ -87,7 +87,7 @@ protected \$fillable = ['title', 'body', 'user_id', 'published_at'];
 ### گام 4 — Attribute casting
 - برای تبدیل اتوماتیک نوع‌ها از `$casts` استفاده کنید.
 ```php
-protected \$casts = [
+protected $casts = [
     'published_at' => 'datetime',
     'is_featured' => 'boolean',
 ];
@@ -100,8 +100,8 @@ protected \$casts = [
 ```php
 protected function title(): Attribute {
     return Attribute::make(
-        get: fn(\$v) => ucfirst(\$v),
-        set: fn(\$v) => strtolower(\$v)
+        get: fn($v) => ucfirst($v),
+        set: fn($v) => strtolower($v)
     );
 }
 ```
@@ -111,7 +111,7 @@ protected function title(): Attribute {
 ### گام 6 — Scopes (Query Scopes)
 - برای قانون‌گذاری queryهای تکراری از scopes استفاده کنید.
 ```php
-public function scopePublished(\$q) { return \$q->whereNotNull('published_at'); }
+public function scopePublished($q) { return $q->whereNotNull('published_at'); }
 ```
 - استفاده: 
 ```php
@@ -134,8 +134,8 @@ class Post extends Model { use SoftDeletes; }
 - برای ثبت observerها یا افزودن global scopeها استفاده کنید.
 ```php
 protected static function booted() {
-    static::creating(function(\$model){ /* modify attributes */ });
-    static::addGlobalScope('published', function(Builder \$builder){ /* ... */});
+    static::creating(function($model){ /* modify attributes */ });
+    static::addGlobalScope('published', function(Builder $builder){ /* ... */});
 }
 ```
 
@@ -184,7 +184,7 @@ php artisan make:d-request StorePostRequest --domain=Blog
 - در Request: rules و authorize را تنظیم کنید:
 ```php
 public function rules() { return ['title' => 'required|string']; }
-public function authorize() { return \Auth::check(); }
+public function authorize() { return Auth::check(); }
 ```
 - استفاده در controller method signature 
 
@@ -229,7 +229,7 @@ php artisan make:d-policy PostPolicy --domain=Blog --model=Post
 - ثبت: در `AuthServiceProvider` یا domain provider.
 - استفاده: 
 ```php
-$this->authorize('update', \$post);
+$this->authorize('update', $post);
 ```
 
 **<p align="center">[👨‍🏫 Full documentation](D-POLICY.md)</p>**
