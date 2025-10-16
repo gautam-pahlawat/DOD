@@ -486,7 +486,7 @@ app/Domain/Security/Services/CachedAuthorizationService.php
 - `InvalidateUserCache()` method called by listeners.
 
 **نمونهٔ کد:**
-> **<p align="center">File: [`...\stubs\ACL\Security\Services\CachedAuthorizationService.php`](/../../tree/main/Subs/ACL/Security/Services/CachedAuthorizationService.php)</p>**
+> **<p align="center">File: [`...\stubs\ACL\Security\Services\CachedAuthorizationService.php`](/../../tree/main/Stubs/ACL/Security/Services/CachedAuthorizationService.php)</p>**
 ```php
 <?php
 declare(strict_types=1);
@@ -889,7 +889,7 @@ return [
 
 **ENV keys:** `SECURITY_CACHE_TTL`, `SECURITY_CACHE_PREFIX`, `SECURITY_FAIL_CLOSED`.
 
-**<p align="center">[Cache in laravel] (https://laravel.com/docs/12.x/cache)</p>**
+**<p align="center">[Cache in laravel](https://laravel.com/docs/12.x/cache)</p>**
 
 ---
 
@@ -906,4 +906,4 @@ return [
 
 ---
 
-> **<p align="center">Read more about [`Service Container`](https://laravel.com/docs/12.x/container), [`Service Providers`](https://laravel.com/docs/12.x/providers) and [`Cache`] (https://laravel.com/docs/12.x/cache) in laravel</p>**
+> **<p align="center">Read more about [`Service Container`](https://laravel.com/docs/12.x/container), [`Service Providers`](https://laravel.com/docs/12.x/providers) and [`Cache`](https://laravel.com/docs/12.x/cache) in laravel</p>**
